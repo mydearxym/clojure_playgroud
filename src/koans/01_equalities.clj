@@ -1,15 +1,18 @@
-(ns koans.01-equalities
-  (:require [koan-engine.core :refer :all]))
 
-(meditations
+
+;(ns koans.01-equalities
+;  (:require [koan-engine.core :refer :all]))
+
+;(meditations
   "We shall contemplate truth by testing reality, via equality"
   (= true true)
 
+
   "To understand reality, we must compare our expectations against reality"
-  (= __ (+ 1 1))
+  (= 2 (+ 1 1))
 
   "You can test equality of many things"
-  (= (+ 3 4) 7 (+ 2 __))
+  (= (+ 3 4) 7 (+ 2 5))
 
   "Some things may appear different, but be the same"
   (= __ (= 2 2/1))
@@ -33,4 +36,4 @@
   (= 'foo (symbol __))
 
   "When things cannot be equal, they must be different"
-  (not= :fill-in-the-blank __))
+  (not= :fill-in-the-blank __)
